@@ -10,13 +10,18 @@ import { StartFunc as StartFuncAiChat } from "./AiChat/entryFile.js";
 import { StartFunc as StartFuncStopWA } from "./stopWA.js";
 import { StartFunc as StartFuncFromWAReadAllChats } from "./wAReadAllChats.js";
 import { StartFunc as StartFuncFromReadFromSingleNumber } from "./ForWA/readFromSingleNumber.js";
+import { StartFunc as StartFuncFromReturnWhoAmI } from "./returnWhoAmI.js";
 
 let StartFunc = ({ inDataAsString, inws, inClients, inChatLog, inSendFunc }) => {
     let LocalDataAsSting = inDataAsString;
     // console.log("LocalDataAsSting : ", LocalDataAsSting);
 
+    if (LocalDataAsSting === "returnWhoAmI") {
+        StartFuncFromReturnWhoAmI({ inDataAsString: LocalDataAsSting, inws: inws, inClients, inSendFunc });
+    };
+
     if (LocalDataAsSting === "returnOnlineClients") {
-        StartFuncreturnOnlineClients({ inDataAsString: LocalDataAsSting, inws: inws, inClients, inSendFunc });
+        StartFuncreturnOnlineClients({ inDataAsString: LocalDataAsSting, inClients, inSendFunc });
     };
 
     if (LocalDataAsSting === "GetWebSocketId") {
