@@ -1,0 +1,45 @@
+{
+    "toolbar": "#toolbar",
+    "search": "true",
+    "searchable": "true",
+    "idfield": "pk",
+    "showFooter": "true",
+    "pagination": "true",
+    "pageList": "[5,10,25,50,100,all]",
+    "data": [],
+    "columns": [
+        {
+            "field": "KS-Serial",
+            "title": "#",
+            "formatter": "jFLocalSerialColumn"
+        },
+        {
+            "field": "PARTYNAME",
+            "title": "PartyName"
+        },
+        {
+            "field": "VOUCHERTYPE",
+            "title": "VoucherType",
+            "visible": false
+        },
+        {
+            "field": "DATE",
+            "title": "Date"
+        },
+        {
+            "field": "REFERENCE",
+            "title": "Reference",
+            "visible": false
+        },
+        {
+            "field": "VOUCHERCANCELLED",
+            "title": "V_Cancelled",
+            "visible": false
+        },
+        {
+            "field": "Opts",
+            "title": "Opts ",
+            "formatter": "jFLocalOptsFormater"
+        }
+    ]
+}

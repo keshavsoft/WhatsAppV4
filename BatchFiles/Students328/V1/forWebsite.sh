@@ -1,0 +1,1 @@
+cp -r  ./FrontEnd/ForWebsite/* ./public

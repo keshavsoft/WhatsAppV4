@@ -1,0 +1,39 @@
+{
+    "toolbar": "#toolbar",
+    "search": "true",
+    "searchable": "true",
+    "idfield": "pk",
+    "showFooter": "true",
+    "pagination": "true",
+    "pageList": "[5,10,25,50,100,all]",
+    
+    "columns": [
+        {
+            "field": "KS-Serial",
+            "title": "#",
+            "formatter": "jFLocalSerialColumn"
+        },
+        {
+            "field": "DATETIME",
+            "title": "DateTime",
+            "filterControl": "input"
+        },
+        {
+            "field": "TREENAME",
+            "title": "TreeName",
+            "filterControl": "select"
+        },
+        {
+            "field": "LATITUDE",
+            "title": "Latitude",
+            "filterControl": "input"
+        },
+        {
+            "field": "LONGITUDE",
+            "title": "Longitude",
+            "filterControl": "input"
+        }
+    ],
+    "filterControl": true,
+    "filterControlVisible": true
+}

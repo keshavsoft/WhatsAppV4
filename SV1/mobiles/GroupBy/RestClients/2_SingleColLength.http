@@ -1,0 +1,1 @@
+GET http://localhost:7019/SV2/mobiles/GroupBy/SingleColLength/{ColumnName}
