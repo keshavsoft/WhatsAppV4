@@ -20,8 +20,7 @@ dotenv.config();
 import { fileURLToPath } from 'url';
 import { router as routerFromV1 } from "./V1/routes.js";
 import { router as routerFromSV1 } from "./SV1/routes.js";
-import { router as routerFromV2 } from "./V2/routes.js";
-import { router as routerFromSV2 } from "./SV2/routes.js";
+
 
 const __filename = fileURLToPath(import.meta.url);
 global.__basedir = path.dirname(__filename);
