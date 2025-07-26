@@ -1,0 +1,30 @@
+{
+    "toolbar": "#toolbar",
+    "search": "true",
+    "searchable": "true",
+    "idfield": "pk",
+    "onClickRow": "",
+    "showFooter": "true",
+    "pagination": "true",
+    "pageList": "[5,10,25,50,100,all]",
+    "data": [],
+    "columns": [
+        {
+            "field": "KS-Serial",
+            "title": "#",
+            "formatter": "jFLocalSerialColumn"
+        },
+        {
+            "field": "ITEMNAME",
+            "title": "ItemName"
+        },
+        {
+            "field": "RATE",
+            "title": "Rate"
+        },
+        {
+            "field": "Save",
+            "title": "Save"
+        }
+    ]
+}
