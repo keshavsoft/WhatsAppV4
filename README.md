@@ -252,3 +252,7 @@ backend : bin
 database : KData
 
 frontend : publicDir/bin
+
+### 26.0.1
+
+- all looks good
