@@ -260,3 +260,7 @@ frontend : publicDir/bin
 ### 26.0.2
 
 - packagejson name changed
+
+### 26.0.3
+
+- V3 added for whatsapp send message alert
