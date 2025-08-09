@@ -1,6 +1,0 @@
-POST http://localhost:7019/V2/StudentNames/Insert/AsIs
-Content-Type: application/json
-
-{
-  "StudentName": "Chakri"
-}

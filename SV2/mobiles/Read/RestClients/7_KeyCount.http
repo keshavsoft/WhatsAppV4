@@ -1,1 +1,0 @@
-GET http://localhost:7019/SV2/mobiles/Read/KeyCount/{Column name}

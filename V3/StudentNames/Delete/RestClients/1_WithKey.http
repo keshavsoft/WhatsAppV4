@@ -1,1 +1,0 @@
-DELETE http://localhost:7019/V3/StudentNames/Delete/WithKey/{pk}

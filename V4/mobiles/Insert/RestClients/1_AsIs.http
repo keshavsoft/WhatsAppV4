@@ -1,0 +1,7 @@
+POST http://localhost:7019/V4/mobiles/Insert/AsIs
+Content-Type: application/json
+
+{
+  "Key": "",
+  "Value": ""
+}

@@ -1,4 +1,0 @@
-POST http://localhost:7019/SV2/mobiles/Alter/ColumnsWithPk/{pk}
-Content-Type: application/json
-
-{}

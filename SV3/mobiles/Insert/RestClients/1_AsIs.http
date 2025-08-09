@@ -1,4 +1,0 @@
-POST http://localhost:7019/SV3/mobiles/Insert/AsIs
-Content-Type: application/json
-
-{}

@@ -1,17 +1,29 @@
 import { getClientInfo } from "../../../../CommonExpose/clientInfo.js";
+import { InsertFunc as InsertFuncFromForWA, CheckLastEntry } from "../../../../CommonExpose/forWA.js";
 
 let StartFunc = ({ inws, inDataAsJson }) => {
     const toWs = inws;
+    // console.log("---------- : ", inDataAsJson);
 
-    // let LocalSendObject = inClients.get(inws);
-    const LocalClientInfo = getClientInfo();
+    const LocalTimeLapseTF = CheckLastEntry();
 
-    LocalClientInfo.sendMessage(`91${inDataAsJson.ToNumber}` + "@c.us", inDataAsJson.ToMessage).then(PromiseData => {
+    if (LocalTimeLapseTF) {
+        const LocalClientInfo = getClientInfo();
+
+        LocalClientInfo.sendMessage(`91${inDataAsJson.ToNumber}` + "@c.us", inDataAsJson.ToMessage).then(PromiseData => {
+            InsertFuncFromForWA({ inValueToInsert: inDataAsJson });
+
+            toWs.send(JSON.stringify({
+                Type: 'ChatACK',
+                ChatLog: inDataAsJson
+            }));
+        });
+    } else {
         toWs.send(JSON.stringify({
-            Type: 'ChatACK',
-            ChatLog: inDataAsJson
+            Type: 'WaSendFail',
+            ChatLog: "time"
         }));
-    });
+    };
 };
 
 export { StartFunc };

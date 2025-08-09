@@ -1,4 +1,0 @@
-POST http://localhost:7019/V2/mobiles/Insert/ColumnExist
-Content-Type: application/json
-
-{}

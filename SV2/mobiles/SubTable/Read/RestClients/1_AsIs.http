@@ -1,1 +1,0 @@
-GET http://localhost:7019/SV2/mobiles/SubTable/Read/AsIs/{RowIndex}/{KeyName}

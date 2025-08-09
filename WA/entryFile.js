@@ -1,8 +1,9 @@
 import Whatsapp from 'whatsapp-web.js';
 const { Client, LocalAuth } = Whatsapp;
 
-import { StartFunc as StartFuncFromInwardMessage } from "./inwardMessage.js";
+// import { StartFunc as StartFuncFromInwardMessage } from "./inwardMessage.js";
 import { StartFunc as StartFuncFromAuthenticated } from "./authenticated.js";
+import { StartFunc as StartFuncFromInwardMessage } from "./SendMessage/entryFile.js";
 
 import { StartFunc as StartFuncFromQrCodeGenerated } from "../CommonExpose/qrCodeGenerated.js";
 import { startFunc as clientInfoFunc } from "../CommonExpose/clientInfo.js";

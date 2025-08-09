@@ -1,4 +1,0 @@
-POST http://localhost:7019/SV2/StudentNames/Read/SelColsAsArray
-Content-Type: application/json
-
-[ "exampleKey"]

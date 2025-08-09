@@ -264,3 +264,7 @@ frontend : publicDir/bin
 ### 26.0.3
 
 - V3 added for whatsapp send message alert
+
+### 26.0.4
+
+- in common for wa time lapse added

@@ -1,4 +1,0 @@
-POST http://localhost:7019/SV2/mobiles/SubTable/Insert/AsIs/{RowIndex}/{KeyName}
-Content-Type: application/json
-
-{}

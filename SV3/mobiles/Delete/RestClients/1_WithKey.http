@@ -1,1 +1,0 @@
-DELETE http://localhost:7019/SV3/mobiles/Delete/WithKey/{pk}

@@ -1,1 +1,0 @@
-DELETE http://localhost:7019/SV2/mobiles/SubTable/Delete/WithPk/{RowPk}/{KeyName}/{Key}
