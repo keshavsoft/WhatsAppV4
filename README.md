@@ -268,3 +268,7 @@ frontend : publicDir/bin
 ### 26.0.4
 
 - in common for wa time lapse added
+
+### 26.0.5
+
+- Whatsapp V5 added
