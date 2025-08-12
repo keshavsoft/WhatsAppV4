@@ -87,14 +87,14 @@
             ]
         },
         {
-            "field": "Back-logs",
+            "field": "Back_logs",
             "title": "Back-logs",
             "unique": false,
             "type": "number",
             "isInput": true
         },
         {
-            "field": "Roll Number",
+            "field": "RollNumber",
             "title": "Roll Number",
             "unique": false,
             "type": "text",
@@ -113,11 +113,6 @@
             "unique": false,
             "type": "text",
             "isInput": true
-        },
-         {
-            "field": "KS-Select",
-            "title": "Select",
-            "checkbox": true
         }
     ],
     "data": {},
@@ -235,7 +230,7 @@
             "type": "text",
             "isInput": true
         },
-         {
+        {
             "field": "KS-Select",
             "title": "Select",
             "checkbox": true

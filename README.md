@@ -272,3 +272,7 @@ frontend : publicDir/bin
 ### 26.0.5
 
 - Whatsapp V5 added
+
+### 26.0.6
+
+- batch file added for new ui on array
