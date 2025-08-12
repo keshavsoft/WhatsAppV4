@@ -21,8 +21,6 @@ dotenv.config();
 import { fileURLToPath } from 'url';
 import { router as routerFromV4 } from "./V4/routes.js";
 import { router as routerFromSV4 } from "./SV4/routes.js";
-import { router as routerFromV2 } from "./V2/routes.js";
-import { router as routerFromSV2 } from "./SV2/routes.js";
 
 const __filename = fileURLToPath(import.meta.url);
 global.__basedir = path.dirname(__filename);
@@ -38,8 +36,6 @@ app.use('/', express.static(path.join(path.resolve(), 'Public')));
 app.use("/DataFolder", routerFromDataFolder);
 app.use("/V4", routerFromV4);
 app.use("/SV4", StartFuncFromMiddleware, routerFromSV4);
-app.use("/V2", routerFromV2);
-app.use("/SV2", StartFuncFromMiddleware, routerFromSV2);
 
 app.get('/StartWA', async (req, res) => {
     await StartFuncFromEntryFile({ inReponse: res });

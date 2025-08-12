@@ -276,3 +276,7 @@ frontend : publicDir/bin
 ### 26.0.6
 
 - batch file added for new ui on array
+
+### 26.0.7
+
+- app.js changed
