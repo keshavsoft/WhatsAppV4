@@ -284,3 +284,7 @@ frontend : publicDir/bin
 ### 26.0.8
 
 - WhatsApp.V7 scanqr gif added
+
+### 26.0.9
+
+- .env port altered for hosting wa.subdomain
