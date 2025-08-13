@@ -280,3 +280,7 @@ frontend : publicDir/bin
 ### 26.0.7
 
 - app.js changed
+
+### 26.0.8
+
+- WhatsApp.V7 scanqr gif added
